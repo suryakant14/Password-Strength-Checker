@@ -20,6 +20,26 @@
 2. Uses the hashlib library for password hashing
 3. Uses the math library for entropy calculations
 3. Uses a simple cracking time estimation algorithm based on password length
+
+## Output
+Enter a password: password
+Password is too short. It should be at least 8 characters.
+Enter a password: password123
+Password should have at least one uppercase letter.
+Enter a password: PASSWORD123
+Password should have at least one lowercase letter.
+Enter a password: Passwordabc
+Password should have at least one digit.
+Enter a password: Password123abc
+Password should have at least one special character.
+Enter a password: password123
+Password is too common. Please choose a more unique password.
+Enter a password: abcdefgh
+Password entropy is too low. Please choose a more complex password.
+Enter a password: Password123!abc
+Password strength is sufficient.
+Enter a password: 
+Password is too short. It should be at least 8 characters.
    
 ## Contributing
 Contributions are welcome! If you'd like to improve the password strength checker or add new features, please fork the repository and submit a pull request.
